@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     fun setValues() {
 
-        Glide.with(this).load("https://img8.yna.co.kr/photo/ap/2011/04/13/PAP20110413127601034_P4.jpg").into(imgWeb)
+        Glide.with(this).load("http://image.koreatimes.com/article/2020/04/16/202004161703185e1.jpg").into(imgWeb)
 
     }
 }
