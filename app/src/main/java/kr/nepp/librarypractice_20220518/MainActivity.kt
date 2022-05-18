@@ -15,6 +15,14 @@ class MainActivity : AppCompatActivity() {
 
     fun setupEvents() {
 
+        btnCall.setOnClickListener {
+
+//            Intent (4) - CALL : 권한이 없어서 앱이 죽는다.
+
+//            권한이 있는지? 확인부터 해보자. => 권한이 있어야만 CALL 실행.
+
+        }
+
         imgProfile.setOnClickListener {
 
             val myIntent = Intent(this, ViewPhotoActivity::class.java)
