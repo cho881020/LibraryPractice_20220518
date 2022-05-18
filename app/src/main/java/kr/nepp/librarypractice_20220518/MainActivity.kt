@@ -1,11 +1,13 @@
 package kr.nepp.librarypractice_20220518
 
+import android.Manifest
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.gun0912.tedpermission.PermissionListener
+import com.gun0912.tedpermission.normal.TedPermission
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -45,6 +47,11 @@ class MainActivity : AppCompatActivity() {
             }
 
 //            2. 권한 확인 요청
+
+            TedPermission.create()
+                .setPermissionListener( permissionListener )
+                .setPermissions( Manifest.permission.CALL_PHONE )
+                .check()
 
         }
 
